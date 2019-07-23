@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="weather">Погода</string>
+    <dimen name="weather">25sp</dimen>
+
+    <string name="degree">150</string>
+    <dimen name="degree">120sp</dimen>
+
+    <string name="celcium">&#x2103;</string>
+    <dimen name="celcium">40sp</dimen>
+
+    <string name="textViewDate">dd mm yy</string>
+    <dimen name="textViewDate">25sp</dimen>
+
+    <string name="typeOfWear">sunny</string>
+    <dimen name="typeOfWear">25sp</dimen>
+
+</resources>

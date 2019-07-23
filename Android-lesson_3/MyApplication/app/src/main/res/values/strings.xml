@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="weather">Погода</string>
+    <string name="textviewWeather">TextView</string>
+    <string name="hint1">hint</string>
+    <string name="hint2">Город</string>
+    <string name="button">Button</string>
+    <string name="cityname">CityName</string>
+    <string name="textviewinfo">textViewInfo</string>
+    <string name="temperature">150</string>
+    <string name="celcium">&#x2103;</string>
+    <string name="typeweather">Ясно</string>
+    <string name="typeOfWeather">Switch</string>
+
+</resources>
