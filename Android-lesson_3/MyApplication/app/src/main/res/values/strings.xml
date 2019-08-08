@@ -11,5 +11,6 @@
     <string name="celcium">&#x2103;</string>
     <string name="typeweather">Ясно</string>
     <string name="typeOfWeather">Switch</string>
+    <string name="switch2">Дымно</string>
 
 </resources>

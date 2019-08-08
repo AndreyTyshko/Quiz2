@@ -16,31 +16,48 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toast.makeText(getApplicationContext(),"Main - onCreate()", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Main - onCreate()", Toast.LENGTH_SHORT).show();
 
 
         Switch switch1 = (Switch) findViewById(R.id.switch1);
-        if (switch1 != null){
+        if (switch1 != null) {
             switch1.setOnCheckedChangeListener(this);
 
         }
 
+        /*Switch switch2 = (Switch) findViewById(R.id.switch2);
+        if (switch2 != null) {
+            onCheckedChanged(CompoundButton);*/
+
+        }
+
+
+
+
+
+
+    public void onSwitchClicked (View view) {
+        Switch switch2 = (Switch) view;
+        boolean checked = switch2.isChecked();
+
+        if (checked == true) {
+             switch2 = findViewById(R.id.switch2);
+             Intent intent2 = new Intent( MainActivity.this, SecondActivity.class);
+             intent2.putExtra("switch2", switch2.getText().toString());
+            startActivity(intent2);
+
+
+        }
     }
 
+       public void onClick(View view) {
 
+           EditText editText1 = findViewById(R.id.editText1);
+           Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+           intent.putExtra("editText1", editText1.getText().toString());
+           startActivity(intent);
 
-
-    public void onClick(View view) {
-
-        EditText editText1 =  findViewById(R.id.editText1);
-        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        intent.putExtra("editText1", editText1.getText().toString());
-        startActivity(intent);
-
-
-
-    }
-
+       }
 
     @Override
     protected void onStart() {
@@ -79,14 +96,10 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     }
 
 
-
-
-        @Override
+    @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        Toast.makeText(this, "Отслеживание переключения: " + (isChecked ? "on" : "off"),
-                Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Отслеживание переключения: " + (isChecked ? "on" : "off"), Toast.LENGTH_SHORT).show();
     }
-
 
 
 }
