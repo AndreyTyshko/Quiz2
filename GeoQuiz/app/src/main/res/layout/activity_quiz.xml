@@ -46,6 +46,12 @@
 
             />
 
+        <Button
+            android:id="@+id/cheat_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheat_button"/>
+
         <ImageButton
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
@@ -55,5 +61,26 @@
 
             />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/mCountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mCountButton" />
+
+        <TextView
+            android:id="@+id/mCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:text="mCountTextView" />
+
+    </LinearLayout>
+
 
 </android.support.v7.widget.LinearLayoutCompat>
