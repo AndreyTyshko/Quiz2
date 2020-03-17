@@ -45,7 +45,43 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate(BUNDLE) called");
         setContentView(R.layout.activity_quiz);
-        if (savedInstanceState != null) {
+
+        mFalseButton = (Button) findViewById(R.id.false_button);
+        mTrueButton =(Button)findViewById(R.id.true_button);
+
+        View.OnClickListener oMyButton = new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v){
+        switch (v.getId())
+               {
+            case R.id.false_button: checkAnswer(false);break;
+            case R.id.true_button: checkAnswer(true);break;
+               }
+               /* if (mFalseButton.isPressed() || mTrueButton.isPressed()) {
+                    mTrueButton.setClickable(false);
+                    mFalseButton.setClickable(false);
+                }
+
+               while (mNextButton.isPressed()) {
+                   mTrueButton.setClickable(true);
+                   mFalseButton.setClickable(true);
+               }*/
+
+
+            }
+
+
+        };
+
+        mTrueButton.setOnClickListener(oMyButton);
+        mFalseButton.setOnClickListener(oMyButton);
+
+
+
+
+        if (savedInstanceState != null)
+        {
             mCurrentIndex = savedInstanceState.getInt(KEY_INDEX, 0);
         }
 
@@ -73,18 +109,12 @@ public class QuizActivity extends AppCompatActivity {
         });
 
 
-        mTrueButton = (Button) findViewById(R.id.true_button);
+      /*  mTrueButton = (Button) findViewById(R.id.true_button);
         mTrueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Toast.makeText(QuizActivity.this, R.string.correct_toast, Toast.LENGTH_SHORT).show();
                 checkAnswer(true);
-//                mCount1++;
-//                if (mCount1 >=1){
-//                    v.setClickable(false);
-//
-//                }
-
             }
         });
 
@@ -94,21 +124,15 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Toast.makeText(QuizActivity.this, R.string.incorrect_toast, Toast.LENGTH_SHORT).show();
                 checkAnswer(false);
-//                mCount1++;
-//                if (mCount1 >=1){
-//                    v.setClickable(false);
-//
-//                }
 
-
-//                while (mFalseButton.callOnClick()){
-//                    mNextButton.setClickable(false);
-//
-//                }
 
 
             }
-        });
+        });*/
+
+
+
+
 
         mPrevButton = (ImageButton) findViewById(R.id.prev_button);
         mPrevButton.setOnClickListener(new View.OnClickListener() {

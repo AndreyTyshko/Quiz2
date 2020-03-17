@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Workout</string>
+    <string name="workout_detail_title_text_view">Заголовок упражнения</string>
+    <string name="string_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus quam nulla, et luctus nunc aliquam sed. Suspendisse ac sapien augue. In eu eros elementum, sagittis mi at, suscipit turpis. Mauris nisl elit, porttitor eu orci in, tincidunt eleifend nulla. Pellentesque bibendum ornare congue. Maecenas vehicula dapibus hendrerit. Suspendisse consectetur accumsan ultricies. Maecenas posuere finibus justo in aliquet. Maecenas vitae libero accumsan turpis lacinia volutpat vitae nec quam.
+
+Etiam ac sollicitudin tellus. Pellentesque nec pretium ante, nec tincidunt nunc. Suspendisse efficitur turpis velit, in gravida mi ornare ut. Aliquam non tincidunt justo, sit amet mollis turpis. Nam elementum, felis at pretium vestibulum, arcu lacus sollicitudin eros, ut dignissim augue metus eget risus. Ut vulputate neque ut leo tristique, at laoreet justo lacinia. Aenean consequat turpis vitae elit sodales auctor. Integer fermentum id ex eu vehicula. Quisque sed ornare dolor. Fusce consequat arcu egestas ipsum consectetur blandit. Donec nec pretium sapien, vitae varius lorem. In hac habitasse platea dictumst. Duis lorem erat, porttitor id vulputate quis, tempor at tellus. Ut vestibulum pulvinar lectus, eget tristique lorem consequat at. Nunc vulputate nunc sed est tempus sagittis.
+
+Duis odio lacus, egestas vitae pharetra ac, eleifend sit amet mi. Phasellus rhoncus, elit non egestas imperdiet, urna velit vulputate arcu, sed volutpat tellus purus non enim. Etiam orci justo, rutrum ut orci in, iaculis mattis elit. Pellentesque pellentesque tincidunt lorem. Donec pharetra turpis dolor, quis rhoncus ligula bibendum quis. Vestibulum ullamcorper tempus nunc, in imperdiet augue mollis ut. Mauris non lacus sed massa ultricies tempor. Duis ultrices odio quis metus vulputate pharetra. Cras at diam dolor. Nam eros dolor, ullamcorper et eleifend eu, lacinia eu elit. Sed sapien est, fringilla ac justo ut, iaculis aliquam mauris. Vestibulum at consequat lacus. Donec sed arcu nec leo rhoncus ullamcorper.
+
+In hac habitasse platea dictumst. Quisque id ipsum ut velit sagittis dignissim. Aenean ac scelerisque massa. Donec id lacus fermentum, vehicula tellus vel, feugiat lorem. Suspendisse faucibus metus ac laoreet lacinia. Duis laoreet, dolor eget luctus bibendum, ligula ipsum viverra ligula, vitae egestas mauris sem et risus. Donec sed egestas sapien. Nullam malesuada erat vel eros sagittis eleifend. Quisque fermentum vestibulum malesuada. Pellentesque vestibulum molestie maximus. Fusce interdum, ex sit amet lobortis tempus, lectus felis imperdiet neque, a dignissim massa odio in lectus. Sed semper viverra lacus, a vulputate purus rutrum et. Nullam bibendum leo ac velit molestie imperdiet. Nam tincidunt feugiat aliquet.
+
+Suspendisse potenti. Fusce sem est, mollis sit amet felis eget, efficitur vestibulum leo. Fusce placerat volutpat massa in volutpat. Quisque a nulla posuere, scelerisque mi luctus, cursus velit. Cras imperdiet accumsan mollis. Mauris libero arcu, rhoncus at dui at, feugiat gravida quam. Duis bibendum, libero ac pretium rhoncus, eros dolor accumsan enim, in fermentum sapien orci eget risus. Donec ut auctor turpis. Curabitur gravida metus at dictum facilisis. Sed urna est, lacinia lobortis justo vel, luctus bibendum mi. Phasellus volutpat diam vel ullamcorper vehicula. Phasellus dignissim quam ac dui ornare, in egestas massa ultricies. Mauris lobortis ex quis magna ultricies, vel euismod tortor suscipit. Nam suscipit urna odio, a dignissim felis ullamcorper vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean eget erat sed quam laoreet ornare iaculis ut es</string>
+    <string name="weight">{0}</string>
+
+    <string name="button_save_record">Сохранить рекорд</string>
+    <string name="record_info">Информация о рекорде, которую можно вывести в две строки</string>
+    <string name="number_of_reps">Количество повторов</string>
+    <string name="button1">Подтягивания</string>
+    <string name="button2">Button</string>
+    <string name="button3">Button</string>
+    <string name="recordNO">Рекорд не побит</string>
+    <string name="recordYES">Рекорд побит</string>
+
+</resources>

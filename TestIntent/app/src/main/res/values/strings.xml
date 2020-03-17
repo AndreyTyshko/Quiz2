@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="name">Name</string>
+    <string name="sendName">TextView</string>
+    <string name="send_button" >Button</string>
+    <string name="hello">hello</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Моё приложенеи</string>
+    <string name="sendName" >TextView</string>
+    <string name="send_button" >Кнопка</string>
+    <string name="hello">ПРивет</string>
+    <string name="name">имя</string>
+
+
+</resources>

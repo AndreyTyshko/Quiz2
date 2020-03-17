@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/header"
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginBottom="8dp"
-        android:fontFamily="sans-serif"
 
+        android:fontFamily="sans-serif"
         android:text="@string/weather"
         android:textColor="@color/colorHeaderWeather"
         android:textSize="@dimen/weather"
@@ -28,9 +31,10 @@
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="8dp"
-        android:fontFamily="sans-serif"
 
+        android:fontFamily="sans-serif"
         android:text="@string/textViewDate"
         android:textColor="@color/colorHeaderWeather"
         android:textSize="@dimen/textViewDate"
@@ -45,9 +49,10 @@
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:fontFamily="sans-serif"
-        android:text="@string/degree"
 
+        android:text="@string/degree"
         android:textColor="@color/colorHeaderWeather"
         android:textSize="@dimen/degree"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,9 +67,10 @@
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginStart="20dp"
-        android:fontFamily="sans-serif"
 
+        android:fontFamily="sans-serif"
         android:text="@string/celcium"
         android:textColor="@color/colorHeaderWeather"
         android:textSize="@dimen/celcium"
@@ -78,17 +84,54 @@
 
     <TextView
         android:id="@+id/typeOfWeather"
-        android:textColor="@color/colorHeaderWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/typeOfWear"
+        android:textColor="@color/colorHeaderWeather"
         app:layout_constraintBottom_toTopOf="@+id/volume"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header" />
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        tools:text="@string/typeOfWear" />
 
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/city"
+        android:textColor="@color/colorHeaderWeather"
+        app:layout_constraintBottom_toTopOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/typeOfWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/textViewWind"
+        android:textColor="@color/colorHeaderWeather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate"
+        app:layout_constraintVertical_bias="0.119"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/countriesList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
